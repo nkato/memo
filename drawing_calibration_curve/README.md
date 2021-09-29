@@ -4,6 +4,18 @@ Draw the calibration curve and data distribution.
 
 This is in reference to [Probability calibration | scikit-learn](https://scikit-learn.org/stable/modules/calibration.html#calibration).
 
+# Definition
+
+```python
+def draw_calibration_curve(
+    y_true: np.ndarray,
+    y_pred: np.ndarray,
+    n_bins: int = 50,
+    draw_range: Tuple[float, float] = (0.0, 1.0),
+    title: str = "",
+) -> None
+```
+
 
 # Arguments
 
